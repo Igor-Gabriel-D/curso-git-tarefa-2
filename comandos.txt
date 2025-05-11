@@ -1,0 +1,34 @@
+Aluno: Igor Gabriel Dantas Rocha 
+Matrícula: 20251ZL00130001
+
+git clone  https://gitlab.com/mizael.cortez/curso-branchs-ifrn-ead
+cd curso-branchs-ifrn-ead/
+ls
+nano texto.txt
+git add texto.txt 
+git commit -m "arquivo de texto criado"
+git branch feature-1
+git branch
+git switch feature-1 
+git branch
+nano texto.txt 
+git add texto.txt 
+git commit -m "arquivo de texto alterado na branch feature-1"
+git switch main 
+nano texto.txt 
+git add texto.txt 
+git commit -m "arquivo de texto alterado na branch main"
+git branch
+git merge feature-1 
+nano texto.txt 
+git add texto.txt
+git commit -m "Resolução do conflito entre main e feature-1"
+git branch add-comandos
+git switch add-comandos
+nano comandos.txt
+git add comandos.txt
+git commit -m "arquivo de comandos usados na tarefa"
+git remote add origin-atividade https://github.com/Igor-Gabriel-D/curso-git-tarefa-2.git
+git push origin-atividade main
+git push origin-atividade add-comandos
+
